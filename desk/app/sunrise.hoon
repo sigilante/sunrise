@@ -4,7 +4,8 @@
 /-  *sunrise
 /+  dbug,
     default-agent,
-    *sunrise
+    *sunrise,
+    verb
 |%
 +$  versioned-state
   $%  state-0
@@ -15,6 +16,7 @@
   ==
 +$  card  card:agent:gall
 --
+%+  verb  &
 %-  agent:dbug
 =|  state-0
 =*  state  -
@@ -67,15 +69,15 @@
   [cards this]
 ++  on-arvo
   |=  [=wire =sign-arvo]
-    ^-  (quip card _this)
-    ?+    sign-arvo  (on-arvo:default [wire sign-arvo])
-        [%eyre %bound *]
-      ?:  accepted.sign-arvo
-        %-  (slog leaf+"/apps/{(trip dap.bowl)} bound successfully!" ~)
-        [~ this]
-      %-  (slog leaf+"Binding /apps/{(trip dap.bowl)} failed!" ~)
+  ^-  (quip card _this)
+  ?+    sign-arvo  (on-arvo:default [wire sign-arvo])
+      [%eyre %bound *]
+    ?:  accepted.sign-arvo
+      %-  (slog leaf+"/apps/{(trip dap.bowl)} bound successfully!" ~)
       [~ this]
-    ==
+    %-  (slog leaf+"Binding /apps/{(trip dap.bowl)} failed!" ~)
+    [~ this]
+  ==
 ++  on-leave  on-leave:default
 ++  on-agent  on-agent:default
 ++  on-fail   on-fail:default
