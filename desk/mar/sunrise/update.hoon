@@ -1,11 +1,11 @@
-  ::  /mar/moonrise-update
+  ::  /mar/sunrise-update
 ::::
 ::
-/-  moonrise
-|_  =update:moonrise
+/-  sunrise
+|_  =update:sunrise
 ++  grab
   |%
-  ++  noun  update:moonrise
+  ++  noun  update:sunrise
   --
 ++  grow
   |%
