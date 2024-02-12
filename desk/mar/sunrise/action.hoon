@@ -1,11 +1,11 @@
-  ::  /mar/moonrise-action
+  ::  /mar/sunrise-action
 ::::
 ::
-/-  moonrise
-|_  =action:moonrise
+/-  sunrise
+|_  =action:sunrise
 ++  grab
   |%
-  ++  noun  action:moonrise
+  ++  noun  action:sunrise
   --
 ++  grow
   |%
