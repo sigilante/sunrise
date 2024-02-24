@@ -41,5 +41,5 @@ if __name__ == "__main__":
     for old_name in ["sunrise", "Sunrise"]:
         rename_and_replace(starting_path, old_name, new_name)
 
-    print(f"Replacement complete. All instances of 'clown-car' have been replaced with '{new_name}' in files and folders.")
+    print(f"Replacement complete. All instances of 'sunrise' have been replaced with '{new_name}' in files and folders.")
 
