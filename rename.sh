@@ -21,7 +21,7 @@ def rename_and_replace(path, old_name, new_name):
             # Rename file
             new_file_name = os.path.basename(entry).replace(old_name, new_name)
             os.rename(entry, os.path.join(os.path.dirname(entry), new_file_name))
-        elif os.path.isfile(entry) and os.path.basename(entry) in ['desk.docket-0', 'README.md']:
+        elif os.path.isfile(entry) and os.path.basename(entry) in ['desk.docket-0', 'README.md', 'desk.bill']:
             # Rename file and replace content
             with fileinput.FileInput(entry, inplace=True) as file:
                 for line in file:
