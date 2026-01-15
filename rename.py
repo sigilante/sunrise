@@ -30,7 +30,7 @@ def rename_and_replace(path, old_name, new_name):
 if __name__ == "__main__":
     # Check if the correct number of arguments are provided
     if len(sys.argv) != 2:
-        print("Usage: python script.py <new_name>")
+        print("Usage: python rename.py <new_name>")
         sys.exit(1)
 
     new_name = sys.argv[1]
